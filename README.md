@@ -28,7 +28,7 @@ We use the default script provided by `s5p-tools` to download and process data f
 > **Note:** The shapefile provided in this repository contains multiple geometries corresponding to the different administrative areas of mainland France. In this case, `s5p-tools` considers the union of all geometries when masking with the --shp flag.
 
 ```
-python s5p-tools/s5p-request.py L2__NO2___ --aoi geojson/france.geojson --shp shp/fr-regions.shp --date 20200601 20200608
+python s5p-tools/s5p-request.py L2__NO2___ --aoi geojson/france.geojson --date 20200601 20200608
 ```
 
 ## Opening the notebook
