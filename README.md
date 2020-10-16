@@ -25,8 +25,6 @@ We recommend setting up a virtual environment with [conda](https://docs.conda.io
 
 We use the default script provided by `s5p-tools` to download and process data from Sentinel-5P. Here, we query the tropospheric column of NO2 over mainland France between 01/06/2020 and 08/06/2020. For more details on how to use `s5p-tools`, please refer to the README.
 
-> **Note:** The shapefile provided in this repository contains multiple geometries corresponding to the different administrative areas of mainland France. In this case, `s5p-tools` considers the union of all geometries when masking with the --shp flag.
-
 ```
 python s5p-tools/s5p-request.py L2__NO2___ --aoi geojson/france.geojson --date 20200601 20200608
 ```
